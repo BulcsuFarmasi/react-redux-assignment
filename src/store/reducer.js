@@ -12,6 +12,8 @@ const reducer = (state = initialState, action) => {
         name: "Max",
         age: Math.floor(Math.random() * 40)
       };
+      console.log(newPerson);
+
       return {
         persons: state.persons.concat(newPerson)
       };
