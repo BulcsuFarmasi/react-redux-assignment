@@ -17,7 +17,7 @@ const reducer = (state = initialState, action) => {
       };
     case DELETE_PERSON:
       return {
-        persons: state.persons.filter(persons => person.id !== action.personId)
+        persons: state.persons.filter(person => person.id !== action.personId)
       };
   }
   return state;
